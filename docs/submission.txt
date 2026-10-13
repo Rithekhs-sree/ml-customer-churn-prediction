@@ -1,0 +1,26 @@
+==========================================================================================================
+                                                DATASET
+==========================================================================================================
+
+
+Link to the public dataset - https://www.kaggle.com/datasets/jpacse/datasets-for-churn-telecom
+
+The dataset is available in this repository under the data folder.
+The following are the dataset files included in the folder:
+        cell2cellholdout.csv  -  Main labelled dataset for developing and evaluating our models
+        cell2celltrain.csv    -  Final prediction/inference demonstration only
+
+
+==========================================================================================================
+                                                REPOSITORY
+==========================================================================================================
+
+
+Link to the Github Repository - https://github.com/Rithekhs-sree/ml-customer-churn-prediction
+
+
+==========================================================================================================
+                                                VIDEO
+==========================================================================================================
+
+Link to the Youtube Video - 
