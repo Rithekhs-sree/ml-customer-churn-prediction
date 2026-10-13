@@ -1,0 +1,970 @@
+============================================================
+FUNDAMENTALS OF MACHINE LEARNING – PROGRAMMING ASSIGNMENT
+PROJECT PLAN
+============
+
+PROJECT TITLE:
+Comparative Analysis of Machine Learning Algorithms for
+Customer Churn Prediction in the Telecommunications Sector
+
+
+
+============================================================
+
+1. PROJECT OVERVIEW
+   ============================================================
+
+This is a two-member group assignment for the Fundamentals of Machine Learning module.
+
+The project will address a real-world telecommunications problem: customer churn prediction.
+
+Customer churn refers to a customer ending their relationship with a telecommunications service provider.
+
+The purpose of this project is to investigate whether machine learning algorithms can use existing customer information to predict whether a customer is likely to churn.
+
+The project will use supervised machine learning and binary classification.
+
+Two different non-deep-learning machine learning algorithms will be implemented and compared:
+
+1. Logistic Regression
+2. Random Forest Classifier
+
+The performance of the two algorithms will be evaluated using appropriate classification metrics and discussed in relation to the customer churn problem.
+
+The assignment requires two distinct algorithms for a group of two students when supervised learning is selected.
+
+Reference to assignment requirement: The assignment allows a real-world problem using a real-world dataset and requires two distinct supervised-learning algorithms for a two-member group.
+
+
+
+============================================================
+2. PROBLEM STATEMENT
+====================
+
+Telecommunications companies lose customers when customers cancel their services or move to another provider. Identifying customers who are likely to leave can help a company take appropriate customer-retention actions.
+
+The problem addressed in this project is: "Can machine learning algorithms accurately predict whether a telecommunications customer is likely to churn based on their demographic information, service information, contract details, and billing characteristics?"
+
+The target variable will represent whether the customer churned or did not churn.
+
+The project will investigate which of the two selected machine learning algorithms performs better for predicting customer churn.
+
+
+
+============================================================
+3. ML APPROACH
+==============
+
+Machine Learning Type: Supervised Learning
+
+Machine Learning Task: Binary Classification
+
+Target: Customer Churn
+
+Target Classes:
+
+* Churn
+* No Churn
+
+Algorithms:
+
+Algorithm 1: Logistic Regression
+
+Purpose: To provide an interpretable classification model that estimates the likelihood of a customer belonging to the churn class.
+
+Algorithm 2: Random Forest Classifier
+
+Purpose:To provide a tree-based ensemble classification model capable of capturing non-linear relationships and interactions between features.
+
+The two algorithms will be trained and tested using the same prepared dataset so that their performance can be fairly compared.
+
+Deep Learning will NOT be used because the assignment explicitly states that only Machine Learning and non-Deep Learning algorithms/models may be used.
+
+
+
+============================================================
+4. DATASET INFORMATION
+======================
+
+Dataset: Telco Customer Churn
+
+Dataset Type: Real-world telecommunications customer data / publicly available sample dataset.
+
+The dataset contains customer-related information that can be used to study and predict churn.
+
+Examples of information included in the Telco churn data include:
+
+* Customer demographic information
+* Gender
+* Dependents
+* Tenure
+* Phone service
+* Internet service
+* Online security
+* Online backup
+* Device protection
+* Technical support
+* Contract type
+* Payment method
+* Monthly charges
+* Total charges
+* Churn information
+
+The exact columns and data types will be inspected and documented during the dataset exploration stage before model training.
+
+Target variable: Churn
+
+The target identifies whether the customer has churned.
+
+IMPORTANT: The exact dataset version downloaded for the project must be recorded. The final report must describe the exact dataset used, including its number of records, features, target variable, and relevant characteristics.
+
+
+
+============================================================
+5. DATASET SOURCE / LINK
+========================
+
+Primary Dataset Source: IBM
+
+IBM provides a telecommunications churn sample/tutorial and publicly provides Telco customer churn data.
+
+Official IBM information: Predict Telecommunications Churn
+
+Dataset/data directory: IBM Public Data Directory
+
+The exact dataset file selected for this project should be recorded here after download.
+
+Dataset file: Telco_customer_churn.xlsx
+
+Source: IBM
+
+Official source/reference: https://www.ibm.com/docs/en/ws-and-kc?topic=tutorials-predict-telecommunications-churn
+
+IBM public data directory: https://public.dhe.ibm.com/software/data/sw-library/cognos/mobile/C11/data/
+
+IMPORTANT:The assignment requires the source of the dataset to be cited. The final submission.txt must contain the dataset link.
+
+If a different copy/version of the dataset is used, the exact source URL must be updated in this section and in the final report.
+
+
+
+
+============================================================
+6. WORKING PLATFORMS / TOOLS
+============================
+
+Programming Language: Python
+
+Primary Development Environment: Google Colab
+
+Notebook Format: Jupyter Notebook (.ipynb)
+
+Version Control: Git and GitHub
+
+Libraries expected to be used:
+
+* pandas
+* numpy
+* matplotlib
+* seaborn
+* scikit-learn
+
+Main purposes:
+
+pandas: Data loading, cleaning, manipulation and analysis.
+
+numpy:Numerical operations.
+
+matplotlib:
+Data visualization.
+
+seaborn:
+Statistical/data visualizations.
+
+scikit-learn:
+Machine learning algorithms, preprocessing, train/test
+splitting and evaluation metrics.
+
+GitHub:
+Source-code storage, collaboration and required project commit
+history.
+
+============================================================
+7. GOOGLE COLAB WORKFLOW
+========================
+
+Google Colab will be used as the main environment for developing and running the machine learning project.
+
+Both group members will have Editor access to the shared Colab
+notebook.
+
+Basic workflow:
+
+1. Create the Google Drive project folder.
+
+2. Create the main Google Colab notebook.
+
+3. Share the notebook with the partner using Editor access.
+
+4. Both members work on the same notebook.
+
+5. Do not edit the exact same cells simultaneously to avoid
+   accidentally overwriting each other's work.
+
+6. Load the selected dataset.
+
+7. Explore and understand the dataset.
+
+8. Clean the dataset.
+
+9. Perform exploratory data analysis.
+
+10. Prepare the features and target variable.
+
+11. Encode categorical variables where required.
+
+12. Perform appropriate preprocessing/scaling.
+
+13. Split the dataset into training and testing sets.
+
+14. Train Logistic Regression.
+
+15. Evaluate Logistic Regression.
+
+16. Train Random Forest.
+
+17. Evaluate Random Forest.
+
+18. Compare both models.
+
+19. Generate graphs, tables and confusion matrices.
+
+20. Analyze important features where appropriate.
+
+21. Record final results.
+
+22. Save the final notebook.
+
+The notebook should contain explanatory Markdown sections so that
+another person can understand what each stage of the project is
+doing.
+
+
+
+============================================================
+8. GITHUB WORKFLOW
+==================
+
+A single GitHub repository will be created for the project.
+
+Repository name:
+ml-customer-churn-prediction
+
+Recommended branch:
+main
+
+Separate branches are NOT required for this beginner-level project workflow.
+
+The repository should be PUBLIC before final submission because the assignment specifically requires a link to a public GitHub repository.
+
+Both members should use their OWN GitHub accounts.
+
+The repository owner should add the second member as a GitHub collaborator.
+
+DO NOT share GitHub passwords.
+
+Both members should make meaningful contributions and commits.
+
+Suggested workflow:
+
+Google Colab
+|
+| Work on notebook
+v
+Customer_Churn_Prediction.ipynb
+|
+| Save/download updated notebook
+v
+Local project folder
+|
+| Git add
+| Git commit
+| Git push
+v
+GitHub repository
+|
+v
+main branch
+
+The GitHub repository must maintain development history from the beginning of the project.
+
+IMPORTANT:
+The assignment specifically requires detailed commit history from
+the inception of the project.
+
+
+
+
+============================================================
+9. PROJECT FOLDER STRUCTURE
+===========================
+
+Recommended project structure:
+
+ml-customer-churn-prediction/
+|
+|-- notebooks/
+|     |
+|     |-- Customer_Churn_Prediction.ipynb
+|
+|-- dataset/
+|     |
+|     |-- Dataset information / README
+|
+|-- report/
+|     |
+|     |-- ML_Assignment_Report.pdf
+|
+|-- PROJECT_PLAN.txt
+|
+|-- README.md
+|
+|-- requirements.txt
+|
+|-- members.txt
+|
+|-- submission.txt
+|
+IMPORTANT:
+The exact final folder structure may be adjusted according to the submission requirements.
+
+The raw dataset should only be committed to GitHub if its source and redistribution conditions permit it. The dataset source/link must always be documented.
+
+
+
+
+============================================================
+10. NOTEBOOK STRUCTURE
+======================
+
+The main Jupyter/Colab notebook should follow a clear structure:
+
+1. Project Introduction
+2. Problem Statement
+3. Dataset Description
+4. Import Libraries
+5. Load Dataset
+6. Initial Dataset Inspection
+7. Data Cleaning
+8. Exploratory Data Analysis
+9. Feature Preparation
+10. Data Preprocessing
+11. Train/Test Split
+12. Logistic Regression
+13. Logistic Regression Evaluation
+14. Random Forest
+15. Random Forest Evaluation
+16. Model Comparison
+17. Confusion Matrices
+18. Feature Importance
+19. Discussion of Results
+20. Conclusion
+
+Each major section should contain Markdown explanations alongside the Python code.
+
+
+
+
+============================================================
+11. EVALUATION METRICS
+======================
+
+The models will be evaluated using appropriate classification
+metrics.
+
+Primary metrics:
+
+* Accuracy
+* Precision
+* Recall
+* F1-score
+* ROC-AUC
+
+Additional evaluation:
+
+* Confusion Matrix
+
+The final report will explain why the selected metrics are appropriate for the customer churn problem.
+
+The results of both algorithms will be presented in a comparison table.
+
+Example:
+
+## Metric                  Logistic Regression    Random Forest
+
+Accuracy                Actual result           Actual result
+Precision               Actual result           Actual result
+Recall                  Actual result           Actual result
+F1-score                Actual result           Actual result
+ROC-AUC                 Actual result           Actual result
+
+The actual values will only be entered after the models have been trained and evaluated.
+
+============================================================
+12. PARTNER RESPONSIBILITIES
+============================
+
+## PARTNER 1 – DATA & LOGISTIC REGRESSION
+
+Main responsibilities:
+
+1. Dataset investigation
+2. Dataset description
+3. Data loading
+4. Data cleaning
+5. Missing-value investigation
+6. Duplicate-value investigation
+7. Exploratory Data Analysis
+8. Feature preparation
+9. Data preprocessing
+10. Train/test split
+11. Logistic Regression implementation
+12. Logistic Regression evaluation
+13. Documentation of the above work
+
+## PARTNER 2 – RANDOM FOREST & MODEL COMPARISON
+
+Main responsibilities:
+
+1. Random Forest implementation
+2. Random Forest evaluation
+3. Confusion matrix analysis
+4. Performance comparison
+5. Feature importance analysis
+6. Results visualization
+7. Documentation of the above work
+
+## BOTH MEMBERS
+
+Both members must:
+
+1. Understand the complete project.
+2. Understand the dataset.
+3. Understand both algorithms.
+4. Understand the preprocessing steps.
+5. Understand the evaluation metrics.
+6. Review each other's work.
+7. Contribute to the final report.
+8. Contribute to the presentation.
+9. Review the final notebook.
+10. Review the final GitHub repository.
+11. Check the final submission files.
+12. Participate in the final testing and validation.
+
+============================================================
+13. REPORT STRUCTURE
+====================
+
+The report is the main deliverable and will be the primary document assessed.
+
+Recommended report structure:
+
+Cover Page
+
+Abstract
+
+1. Introduction
+   1.1 Background
+   1.2 Problem Statement
+   1.3 Project Objectives
+
+2. Dataset
+   2.1 Dataset Source
+   2.2 Dataset Description
+   2.3 Features
+   2.4 Target Variable
+   2.5 Dataset Characteristics
+
+3. Data Preprocessing
+   3.1 Data Cleaning
+   3.2 Missing Values
+   3.3 Duplicate Data
+   3.4 Feature Encoding
+   3.5 Feature Scaling
+   3.6 Train/Test Split
+
+4. Exploratory Data Analysis
+
+5. Methodology
+   5.1 Supervised Learning
+   5.2 Logistic Regression
+   5.3 Random Forest
+   5.4 Evaluation Metrics
+
+6. Experimental Results
+   6.1 Logistic Regression Results
+   6.2 Random Forest Results
+   6.3 Confusion Matrices
+   6.4 Performance Comparison
+
+7. Discussion
+   7.1 Comparison of Algorithms
+   7.2 Best Performing Model
+   7.3 Interpretation of Results
+   7.4 Practical Implications
+
+8. Limitations
+
+9. Future Work
+
+10. Conclusion
+
+References
+
+Appendix A – Source Code
+
+The source code in the appendix must be provided as TEXT and NOT as screenshots.
+
+
+
+============================================================
+14. PRESENTATION PLAN
+=====================
+
+A YouTube video will be created demonstrating and presenting the project.
+
+Maximum presentation time:
+5 minutes per member.
+
+Total maximum for two members:
+10 minutes.
+
+Suggested division:
+
+## PARTNER 1:
+
+* Introduction to the problem
+* Customer churn concept
+* Dataset
+* Dataset features
+* Data preprocessing
+* Exploratory Data Analysis
+* Logistic Regression
+
+## PARTNER 2:
+
+* Random Forest
+* Model evaluation
+* Evaluation metrics
+* Results
+* Algorithm comparison
+* Feature importance
+* Final conclusion
+
+Both members should be able to explain the entire project if questions are asked.
+
+The YouTube video link must be included in submission.txt.
+
+
+
+
+============================================================
+15. REQUIRED SUBMISSION FILES
+=============================
+
+The assignment requires the following components:
+
+1. members.txt
+
+Contains:
+
+* Student ID of Member 1
+* Email of Member 1
+* Student ID of Member 2
+* Email of Member 2
+
+2. submission.txt
+
+Contains:
+
+* Dataset link
+* Public GitHub repository link
+* YouTube presentation/demo link
+
+3. Public GitHub Repository
+
+Must contain:
+
+* Jupyter Notebook(s)
+* Project code
+* Required project documentation
+* Development/commit history
+
+4. PDF Report
+
+The report must contain:
+
+* Problem addressed
+* Dataset used
+* Methodology
+* Algorithms
+* Results
+* Discussion
+* Limitations
+* Future work
+* Algorithm comparison using appropriate metrics
+* Source code appendix
+
+5. YouTube Presentation/Demo
+
+The video must demonstrate/present the completed work.
+
+Each member can explain their contribution for a maximum of 5 minutes.
+
+6. Final ZIP File
+
+The complete submission bundle must be compressed into one ZIP file.
+
+Required filename:
+
+ML-assignment.zip
+
+
+
+
+============================================================
+16. GIT COMMIT PLAN
+===================
+
+Git commits should be meaningful and should document the actual development process.
+
+Suggested commit history:
+
+Commit 01:
+Initial project repository setup
+
+Commit 02:
+Added project plan and README
+
+Commit 03:
+Added dataset source and dataset documentation
+
+Commit 04:
+Added initial notebook structure
+
+Commit 05:
+Added dataset loading and initial inspection
+
+Commit 06:
+Added data cleaning and preprocessing
+
+Commit 07:
+Added exploratory data analysis
+
+Commit 08:
+Implemented Logistic Regression
+
+Commit 09:
+Added Logistic Regression evaluation
+
+Commit 10:
+Implemented Random Forest
+
+Commit 11:
+Added Random Forest evaluation
+
+Commit 12:
+Added confusion matrices and performance metrics
+
+Commit 13:
+Added model comparison
+
+Commit 14:
+Added feature importance analysis
+
+Commit 15:
+Updated results and discussion
+
+Commit 16:
+Finalized notebook
+
+Commit 17:
+Updated README and project documentation
+
+Commit 18:
+Added final report/submission documentation
+
+The exact number of commits may change according to the actual
+development process.
+
+IMPORTANT:
+Do NOT create fake commits just to increase the number of commits.
+Commit messages should accurately describe actual work performed.
+
+Both members should contribute meaningful commits using their own GitHub accounts.
+
+
+
+
+
+============================================================
+17. FINAL SUBMISSION CHECKLIST
+==============================
+
+## PROJECT
+
+[ ] Real-world problem selected
+[ ] Customer churn problem clearly defined
+[ ] Supervised learning selected
+[ ] Binary classification defined
+[ ] Two distinct algorithms selected
+[ ] No Deep Learning used
+
+## DATASET
+
+[ ] Real-world dataset
+[ ] Publicly available dataset
+[ ] Credible source
+[ ] Dataset source documented
+[ ] Dataset URL recorded
+[ ] Exact dataset version recorded
+[ ] Dataset characteristics documented
+[ ] Target variable identified
+
+## MACHINE LEARNING
+
+[ ] Dataset loaded
+[ ] Dataset explored
+[ ] Data cleaned
+[ ] Missing values investigated
+[ ] Duplicate values investigated
+[ ] Exploratory Data Analysis completed
+[ ] Categorical features handled
+[ ] Numerical features handled
+[ ] Appropriate preprocessing completed
+[ ] Train/test split completed
+[ ] Logistic Regression implemented
+[ ] Random Forest implemented
+[ ] Both models tested
+[ ] Accuracy calculated
+[ ] Precision calculated
+[ ] Recall calculated
+[ ] F1-score calculated
+[ ] ROC-AUC calculated where appropriate
+[ ] Confusion matrices generated
+[ ] Models compared
+[ ] Results discussed
+
+## GOOGLE COLAB
+
+[ ] Main notebook created
+[ ] Partner given Editor access
+[ ] Notebook sections organized
+[ ] Code contains explanations
+[ ] Final notebook saved
+[ ] Final notebook tested from beginning to end
+
+## GITHUB
+
+[ ] Repository created
+[ ] Repository made public before final submission
+[ ] Partner added as collaborator
+[ ] Both members use their own GitHub accounts
+[ ] No passwords shared
+[ ] Notebook uploaded
+[ ] README included
+[ ] Project plan included
+[ ] Meaningful commit history created
+[ ] Commit history starts from project inception
+[ ] Both members have meaningful contributions
+
+## REPORT
+
+[ ] Problem described
+[ ] Dataset described
+[ ] Dataset source cited
+[ ] Methodology explained
+[ ] Both algorithms explained
+[ ] Results included
+[ ] Metrics included
+[ ] Algorithms compared
+[ ] Results discussed
+[ ] Limitations included
+[ ] Future work included
+[ ] Conclusion included
+[ ] References included
+[ ] Source code included as TEXT
+[ ] Source code is NOT screenshots
+[ ] Final report converted to PDF
+
+## PRESENTATION
+
+[ ] YouTube video recorded
+[ ] Both members participate
+[ ] Each member is within 5-minute limit
+[ ] Contributions explained
+[ ] Project demonstrated
+[ ] YouTube link added to submission.txt
+
+## SUBMISSION FILES
+
+[ ] members.txt
+[ ] submission.txt
+[ ] PDF report
+[ ] Public GitHub repository
+[ ] YouTube video
+[ ] Required notebook/code
+[ ] Final ZIP created
+[ ] ZIP named ML-assignment.zip
+[ ] Only one group member uploads the final ZIP
+[ ] Final ZIP checked before upload
+[ ] CourseWeb submission completed
+
+
+
+
+============================================================
+18. IMPORTANT ASSIGNMENT RULES
+==============================
+
+1. This is a group assignment with 2 members.
+
+2. The assignment carries 40 marks.
+
+3. A real-world problem must be addressed.
+
+4. The dataset must be real-world data published on the internet.
+
+5. The dataset source must be credible and publicly available.
+
+6. The dataset source must be cited.
+
+7. Machine Learning and non-Deep Learning algorithms/models must be used.
+
+8. For supervised learning, two distinct algorithms must be applied because the group contains two members.
+
+9. Python may be used as the programming language.
+
+10. Jupyter Notebook is an accepted programming environment. Google Colab will be used as the practical environment for this project.
+
+11. A public GitHub repository containing the Jupyter Notebook(s) and code is required.
+
+12. The GitHub repository must contain detailed commit history from the inception of the project.
+
+13. members.txt must contain the IDs and emails of both members.
+
+14. submission.txt must contain:
+
+    * Dataset link
+    * GitHub repository link
+    * YouTube video link
+
+15. The report must be submitted in PDF format.
+
+16. The report must describe:
+
+    * Problem addressed
+    * Dataset
+    * Methodology
+    * Algorithms
+    * Results
+    * Discussion
+    * Limitations
+    * Future work
+
+17. The report must compare the algorithms using appropriate
+    evaluation metrics.
+
+18. Source code must be included in the report appendix.
+
+19. Source code in the appendix must be TEXT, not screenshots.
+
+20. The report is the main deliverable.
+
+21. Code must be submitted to validate what is described in the report.
+
+22. Missing required components may result in the submission being rejected and receiving zero marks.
+
+23. Resubmissions are subject to a maximum mark of 45%.
+
+24. Reports will be checked using Turnitin.
+
+25. Similarity above 20% may result in marks being penalized.
+
+26. The complete submission must be uploaded as one ZIP file.
+
+27. The ZIP file must be named:
+    ML-assignment.zip
+
+28. Only one group member needs to upload the final ZIP to
+    CourseWeb.
+
+29. Deadline:
+    End of Week 12 of the semester.
+
+30. Marks:
+    40
+
+
+
+
+============================================================
+19. PROJECT SUCCESS CRITERIA
+============================
+
+The project will be considered complete when:
+
+* The real-world churn problem has been clearly defined.
+* The selected dataset has been properly documented and cited.
+* Two distinct supervised ML algorithms have been implemented.
+* Both models have been tested using appropriate evaluation
+  metrics.
+* The results have been compared and discussed.
+* The limitations and future work have been identified.
+* The complete source code is available in the GitHub repository.
+* The GitHub repository contains meaningful development history.
+* The report contains the complete source code as text in its
+  appendix.
+* The YouTube presentation has been completed.
+* members.txt has been completed.
+* submission.txt has been completed.
+* The final submission bundle has been checked.
+* ML-assignment.zip has been created and is ready for CourseWeb.
+
+
+
+
+============================================================
+END OF PROJECT PLAN
+===================
+
+
+Partner 1 — Data & Logistic Regression
+
+Dataset investigation
+Data cleaning
+Exploratory Data Analysis
+Data preprocessing
+Logistic Regression
+Logistic Regression evaluation
+
+Partner 2 — Random Forest & Model Comparison
+
+Random Forest
+Random Forest evaluation
+Confusion matrices
+Performance comparison
+Feature importance
+Results interpretation
+
+Both
+
+Problem definition
+Understanding the dataset
+Understanding both algorithms
+Notebook review
+Report writing
+Discussion/conclusion
+Presentation
+Final testing
+GitHub management
