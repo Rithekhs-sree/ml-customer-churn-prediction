@@ -7,8 +7,8 @@ Link to the public dataset - https://www.kaggle.com/datasets/jpacse/datasets-for
 
 The dataset is available in this repository under the data folder.
 The following are the dataset files included in the folder:
-        cell2cellholdout.csv  -  Main labelled dataset for developing and evaluating our models
-        cell2celltrain.csv    -  Final prediction/inference demonstration only
+        cell2celltrain.csv    -  Main labelled dataset for developing and evaluating our models
+        cell2cellholdout.csv  -  Final prediction/inference demonstration only (no churn labels)
 
 
 ==========================================================================================================
